@@ -8,7 +8,7 @@
         Title="Demo Form Thing" Height="453" Width="785">
     <Grid>
         <Button x:Name="btnSayHello" Content="A Name" HorizontalAlignment="Left" 
-                Margin="150,64,0,0" VerticalAlignment="Top" Width="100"
+                Margin="643,10,0,0" VerticalAlignment="Top" Width="100"
                 Click="btnSayHello_Click" Foreground="White" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -17,9 +17,8 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button x:Name="btnSayHelloAgain" Content="A Name" HorizontalAlignment="Left" 
-            Margin="150,89,0,0" VerticalAlignment="Top" Width="100"
-            Click="btnSayHello_Click" Foreground="White" >
+        <Button x:Name="btnReadFile" Content="Read File" HorizontalAlignment="Left" 
+            Margin="32,10,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Click="btnReadFile_Click" >
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FF209388" Offset="0.201"/>
@@ -27,8 +26,27 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Background="Red" Margin="342,64,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="396,74,0,0" VerticalAlignment="Top" Width="75"/>
+
+        <Button HorizontalAlignment="Left" Margin="205,127,0,0" VerticalAlignment="Top" Width="168" Height="83" >
+            <Button  HorizontalAlignment="Left" Background="Red" VerticalAlignment="Top" Width="113" Height="41">
+                <Button Content="Button" />
+            </Button>
+        </Button>
+
+        <Button x:Name="btnNotReadFile" Content="Read File" HorizontalAlignment="Left" 
+            Margin="32,35,0,0" VerticalAlignment="Top" Width="100" Foreground="White" Click="btnReadFile_Click" >
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF209388" Offset="0.201"/>
+                    <GradientStop Color="#FFB702BF" Offset="0.695"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnFindLine" Content="Find Line" IsEnabled="False" HorizontalAlignment="Left" Margin="393,30,0,0" VerticalAlignment="Top" Width="75" Click="btnFindLine_Click"/>
+        <TextBox x:Name="txtLineNumber" HorizontalAlignment="Left" Height="23" Margin="268,30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="48"/>
+        <Label Content="Line" HorizontalAlignment="Left" Margin="268,7,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtLetterNumber" HorizontalAlignment="Left" Height="23" Margin="321,30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="48"/>
+        <Label Content="Letter" HorizontalAlignment="Left" Margin="321,7,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
